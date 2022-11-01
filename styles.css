@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px black solid;
+}
+
+.outerbox {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.innerbox {
+    margin: 0 30px;
+    flex: 0 1 900px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+article{
+    flex: 0 1 150px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: pink;
+}
+
+article h3 {
+    font-size: 1.3rem;
+}
+
+article h2 {
+    min-height: 40px;
+    font-size: 3rem;
+}
+
+.sold {
+    color: green;
+}
+
+.stock {
+    color:blue;
+
+}
+
+.available {
+    color: red;
+}
+
