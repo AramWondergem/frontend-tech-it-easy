@@ -3,8 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Tech It Easy Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <script defer src="assigment1.js"></script>
+    <script defer src="assignment2.js"></script>
+    <script defer src="assignment3.js"></script>
+    <script defer src="assignment4.js"></script>
+    <script defer src="assignmentbonus.js"></script>
 </head>
 <body>
+<header class="outerbox">
+    <div class="innerbox">
+        <article class="sold">
+            <h3>Sold</h3>
+            <h2 id="tvSold"></h2>
+        </article>
+        <article class="stock">
+            <h3>Stock</h3>
+            <h2 id="tvStock"></h2>
+        </article>
+        <article class="available">
+            <h3>Available</h3>
+            <h2 id="tvAvailable"></h2>
+        </article>
+    </div>
+</header>
+
+<div class="outerbox outerbox__buttons">
+    <div class="innerbox innerbox__buttons">
+        <button id="reset">Reset</button>
+        <button id="highToLow">Hoog naar Laag</button>
+        <button id="lowToHigh">Laag naar Hoog</button>
+        <button id="outOfStock">Uitverkocht tv's</button>
+        <button id="ambiLightTVs">Ambilight tv's</button>
+    </div>
+</div>
+
+<div class="outerbox">
+    <div class="innerbox innerbox-main">
+        <div class="tv-names"><H2>TV brands</H2>
+            <ul id="listTVbrands"></ul>
+        </div>
+        <div>
+            <h2>Type TV's</h2>
+            <div class="boxes-with-tvs" id="boxes-with-tvs"></div>
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>

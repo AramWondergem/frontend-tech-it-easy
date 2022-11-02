@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 1px black solid;*/
+}
+
+.outerbox {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.innerbox {
+    margin: 0 30px;
+    flex: 0 1 900px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 50px 0;
+}
+
+article {
+    flex: 0 1 150px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: pink;
+    border-radius: 10px;
+}
+
+article h3 {
+    font-size: 1.3rem;
+}
+
+article h2 {
+    min-height: 40px;
+    font-size: 3rem;
+}
+
+.sold {
+    color: green;
+}
+
+.stock {
+    color: blue;
+
+}
+
+.available {
+    color: red;
+}
+
+li::marker {
+    color:purple;
+}
+
+.boxes-with-tvs {
+    flex: 0 1 400px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.tv-names {
+    background-color: darkorange;
+    border-radius: 10px;
+    padding: 3em;
+}
+
+.innerbox-main {
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.tv-box {
+    background-color: grey;
+    border-radius: 10px;
+    padding: 1em;
+    white-space: pre-line; /*set this because I couldn't use <br> elements*/
+}
+
+.innerbox-main h2{
+    align-self: center;
+    background-color: lightsalmon;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: lime;
+    padding: 1em 3em;
+    border-radius: 10px;
+    border-width: 3px;
+}
+
+button:hover, button:focus {
+    border: red 3px solid;
+    background-color: yellow;
+}
+
+.outerbox__buttons {
+    position: sticky;
+    top: 20px;
+}
